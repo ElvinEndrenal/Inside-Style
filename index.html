@@ -3,32 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/img/LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Inside Style</title>
 </head>
 <body>
-    <header>
+
+    <!-------- HEADER ------->
+    <header class="header">
         <div class="container">
-            <div class="head_wrapper">
+            <div class="header_wrapper">
                 <div class="branding">
-                    <img src="img/LOGO.png" alt="">
+                    <img src="./src/img/LOGO.png" alt="">
                 </div>
-                <div class="head_nav">
+                <div class="header_nav">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a</li>
-                        <li><a href="">Catalog</a</li>
-                        <li><a href="">Updates</a</li>
-                        <li><a href="">Contacts</a</li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="./src/subpages/about.html">About</a></li>
+                        <li><a href="">Catalog</a></li>
+                        <li><a href="">Updates</a></li>
+                        <li><a href="">Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        </div>
+
     </header>
+
+    <!-------- TOP ------->
+    <section class="top">
+        <div class="container">
+                <div class="top_text">
+                    <small>INTERIOR DESIGN</small>
+                    <h4>inside style</h4>
+                </div>
+        </div>
+    </section>
+
+    <!-------- BANNER ------->
+    <section class="homeBanner">
+        <div class="container">
+            <div class="homeBanner_wrapper">
+                <div class="homeBanner_text">
+                    <ul class="homeBanner_text--title">
+                        <li>New</li>
+                        <li>INTERIOR</li>
+                        <li>Collections</li>
+                    </ul>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita numquam error rerum est. Officia illum quibusdam quidem, harum fugit omnis! Molestias eum error tempora facere sapiente. Similique rem modi quas voluptas voluptatem alias aliquid tenetur explicabo. Accusamus explicabo, expedita fugiat dolor consequatur incidunt aspernatur laborum iure, quas fugit voluptate eaque alias reprehenderit ullam cumque mollitia blanditiis unde ad illum eveniet porro at quod deleniti itaque! Amet molestias commodi in sit repudiandae iure, fugit delectus, inventore a ab quaerat tempore animi itaque provident sed assumenda. Amet consectetur veritatis consequatur itaque unde.
+                    </p>
+                    <a href="" class="btn btn-tertiary">Learn more</a>
+                </div>
+                <div class="homeBanner_img">
+                    <img src="./src/img/banner-1.png" alt="">
+                    <img src="./src/img/banner-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------- SECTION ------->
+    <section class="homeAbout">
+        <div class="container">
+            <h2>About Inside Style</h2>
+            <div class="homeAbout_wrapper">
+                <div class="homeAbout_img">
+                    <img src="./src/img/about-2.png" alt="">
+                </div>
+                <div class="homeAbout_text">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque dicta neque officia sunt perspiciatis repudiandae amet id minima nemo enim. Deleniti esse, sint voluptate vero suscipit totam accusantium maiores incidunt et modi ex quasi quo ullam architecto quibusdam blanditiis deserunt assumenda! Magni accusamus optio dignissimos delectus libero odio eveniet ex quam perspiciatis, doloribus, iusto suscipit, in dolorum voluptatum quo nobis.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque dicta neque officia sunt perspiciatis repudiandae amet id minima nemo enim. Deleniti esse, sint voluptate vero suscipit totam accusantium maiores incidunt et modi ex quasi quo ullam architecto quibusdam blanditiis deserunt assumenda! Magni accusamus optio dignissimos delectus libero odio eveniet ex quam perspiciatis, doloribus, iusto suscipit, in dolorum voluptatum quo nobis.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur molestias corrupti sunt consectetur porro esse. Earum, ad! Hic recusandae libero culpa excepturi, nostrum voluptates fugiat quasi molestias quo a ab!
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur molestias corrupti sunt consectetur porro esse. Earum, ad! Hic recusandae libero culpa excepturi, nostrum voluptates fugiat quasi molestias quo a ab!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------- CATALOG ------->
+    <section class="homeCatalog">
+        <container>
+            <div class="container">
+                <h2>Catalog</h2>
+                <div class="homeCatalog_wrapper">
+                    <div class="card">
+                        <img src="./src/img/catalog-1.png" alt="">
+                        <div class="card_details">
+                            <h4>Boho Theme</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quos officia quae non dolores debitis!
+                            </p>
+                            <a href="" class="btn-nobg">Read more...</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./src/img/catalog-2.png" alt="">
+                        <div class="card_details">
+                            <h4>Minimalist Theme</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quos officia quae non dolores debitis!
+                            </p>
+                            <a href="" class="btn-nobg">Read more...</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./src/img/catalog-3.png" alt="">
+                        <div class="card_details">
+                            <h4>Traditional Theme</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quos officia quae non dolores debitis!
+                            </p>
+                            <a href="" class="btn-nobg">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </container>
+    </section>
+
+    <!-------- CTA ------->
+    <section class="cta">
+        <div class="container">
+            <h3>Feel free to talk about your desired style</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam consectetur vitae, dolorum inventore quo.
+            </p>
+            <a href=" " class="btn btn-tertiary">Learn more</a>
+        </div>
+    </section>
+
+    <!-------- FOOTER ------->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <ul class="footer_social">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+                <p>Baloc Road, Brgy San Ignacio San Pablo City, Laguna</p>
+                <p>&copy; INSIDESTYLE2023</p>
+            </div>
+        </div>
+    </footer>
 </body>
-<script src="/script.js"></script>
+<script src="./js/script.js"></script>
 </html>
