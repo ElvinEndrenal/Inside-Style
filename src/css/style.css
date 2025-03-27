@@ -544,7 +544,7 @@ img {
     }
 } 
 
-/* ----------ABOUT PAGE---------- */
+/* ----------ABOUT PAGE BANNER---------- */
 
 .aboutBanner {
     padding: 11rem 0 4rem 0;
@@ -596,7 +596,7 @@ img {
     right: 0.5rem;
 }
 
-/* ----------ABOUT PAGE MOBILE---------- */
+/* ----------ABOUT PAGE BANNER MOBILE---------- */
 
 @media screen and (max-width: 520px) {
     .aboutBanner .about_group img,
@@ -615,11 +615,6 @@ img {
         justify-content: center;
     }
 
-
-    .aboutLatest h2, small {
-        text-align: justify;
-        margin: 0 auto;
-    }
 
 }
 
@@ -649,6 +644,82 @@ img {
     justify-content: center;
 }
 
+/* ----------ABOUT PAGE LATEST MOBILE---------- */
+
+@media screen and (max-width: 520px) { 
+    .aboutLatest h2, small {
+        text-align: justify;
+        margin: 0 auto;
+    }
+}
+
+/* ----------CATALOG PAGE BANNER---------- */
+.catalogBanner {
+    background: linear-gradient(
+        rgba(255, 255, 255, .05), 
+        rgba(255, 255, 255, 05)), 
+        url(../img/catalog-banner.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.catalogBanner h1{
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.catalogBanner h4 {
+    font-size: 2.5rem;
+    max-width: 40rem;   
+    margin: 0 auto;
+}
+
+/* ----------CATALOG PAGE BANNER---------- */
+.catalogPackage .package_wrapper h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--primary);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.catalogPackage .package {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding: 10rem 20rem;
+}
+
+.catalogPackage .package_img img {
+    width: 60rem;
+}
+
+.catalogPackage .package_text h2 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 5rem;
+}   
+
+.catalogPackage .package_text p {
+    max-width: 50rem;
+    text-align: justify;
+}   
+
+.catalogPackage .package:nth-child(odd){
+    background-color: var(--tertiary);
+    flex-direction: row-reverse;
+}
 
 /* ----------CTA---------- */
 
