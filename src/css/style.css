@@ -752,7 +752,7 @@ img {
 
 /* ----------UPDATES PAGE BANNER---------- */
 .updatesBanner {
-    padding: 15rem 0 0 0;
+    padding: 15rem 0 10rem 0;
 }
 
 .updatesBanner .updatesBanner_wrapper {
@@ -1026,6 +1026,13 @@ img {
     background-color: var(--light);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width: 35rem;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    background-color: var(--dark);
+    transition: all 0.5s ease;
+    color: #1b8b83;
 }
 
 .card img {
