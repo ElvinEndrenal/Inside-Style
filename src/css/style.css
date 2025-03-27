@@ -145,7 +145,7 @@ img {
 }
 
 .header img {
-    width: 10rem;
+    width: 12rem;
 }
 
 .header .header_nav {
@@ -694,6 +694,7 @@ img {
 
 .catalogPackage .package {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10rem;
     padding: 10rem 20rem;
@@ -708,7 +709,7 @@ img {
     font-weight: bold;
     color: var(--primary);
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }   
 
 .catalogPackage .package_text p {
@@ -720,6 +721,222 @@ img {
     background-color: var(--tertiary);
     flex-direction: row-reverse;
 }
+
+/* ----------CATALOG PACKAGE MOBILE---------- */
+
+@media screen and (max-width: 520px) { 
+    .catalogPackage h1 {
+        margin-bottom: 5rem;
+    }
+    
+    .catalogPackage .package {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        padding: 5rem;
+    }
+
+    .catalogPackage .package_text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 100rem;
+    }
+
+    .catalogPackage .package:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ----------UPDATES PAGE BANNER---------- */
+.updatesBanner {
+    padding: 15rem 0 0 0;
+}
+
+.updatesBanner .updatesBanner_wrapper {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.updatesBanner .updatesBanner_text {
+    max-width: 50rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.updatesBanner .updatesBanner_text h1 {
+    text-align: center;
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 5rem;
+}
+
+.updatesBanner .updatesBanner_text p {
+    text-align: justify;
+}
+
+.updatesBanner .updatesBanner_img img {
+    width: 70rem;
+}
+
+/* ----------UPDATES PAGE BUILDING---------- */
+
+.updatesBuilding .updatesBuilding_wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.updatesBuilding .parent_designs h2 {
+    color: var(--secondary);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem 5rem;
+
+} 
+.updatesBuilding .parent_designs {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+} 
+
+.updatesBuilding .parent_category {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+} 
+
+.updatesBuilding .updatesBuilding_designs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.updatesBuilding .updatesBuilding_designs .box {
+    background-color: var(--tertiary);
+    width: 40rem;
+    padding: 2.5rem;
+}
+
+.updatesBuilding .updatesBuilding_designs .box h3{
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.updatesBuilding .updatesBuilding_designs .box p{
+    text-align: justify;
+    margin: 1rem;
+}   
+
+.updatesBuilding .updatesBuilding_designs .box .icon{
+    font-size: 3rem;
+    text-align: right;
+}
+
+.updatesBuilding .parent_category h2 {
+    color: var(--secondary);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem 0;
+} 
+
+.updatesBuilding .updatesBuilding_categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+}
+
+.updatesBuilding .updatesBuilding_categories ul li {
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ----------UPDATES PAGE PROJECTS---------- */
+
+.updatesProject {
+    padding: 15rem 0;
+}
+
+.updatesProject_wrapper h2 {
+    color: var(--primary);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.updatesProject .updates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.updatesProject .updates .tags,
+.updatesProject .updates .date{
+    display: flex;
+    font-size: 2.2rem;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+.updatesProject .updates .tags i,
+.updatesProject .updates .date i{
+    margin-top: 0.5rem;
+}
+
+.updatesProject .description {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----------UPDATE PAGE MOBILE---------- */
+
+@media screen and (max-width: 520px) { 
+
+    .updatesBanner .updatesBanner_wrapper {
+        gap: 0;
+        margin: 3rem;
+    }
+
+    .updatesBanner .updatesBanner_img img {
+        display: none;
+    }
+
+    .updatesBuilding .updatesBuilding_designs{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .updatesBuilding .updatesBuilding_wrapper{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 4rem;
+        margin: 0 auto;
+    }
+
+    .updatesBuilding .parent_designs h2 {
+        margin: 5rem auto;
+        text-align: center;
+    } 
+}
+
 
 /* ----------CTA---------- */
 
