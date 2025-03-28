@@ -937,6 +937,132 @@ img {
     } 
 }
 
+/* ----------CONTACTS PAGE BANNER---------- */
+
+.contactsBanner{
+    background-color: var(--tertiary);
+    padding: 23rem 0;
+}
+
+.contactsBanner .contactsBanner_wrapper {
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+}
+
+.contactsBanner h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.contactsBanner p {
+    color: var(--dark);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.contactsBanner .contacts_input {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.contactsBanner .contacts_input input,
+.contactsBanner .contacts_input textarea {
+    background: var(--tertiary);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 1rem;
+    font-family: "Truculenta", sans-serif;
+    font-size: 1.8rem;
+    width: 60rem;
+    padding-left: 2rem;
+}
+
+.contactsBanner .contacts_input textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.contactsBanner .contacts_input a {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.5rem ;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contactsBanner .contacts_info {
+    background: var(--dark);
+    padding: 2rem;
+    width: 50rem;
+}
+
+.contactsBanner .contacts_info h3 {
+    font-size: 3rem;
+    color: var(--light);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contactsBanner .contacts_info ul li a {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.contactsBanner .contacts_info ul li a i {
+    font-size: 2rem;
+    color: var(--secondary);
+    width: 5rem;
+    text-align: center;
+}
+
+.contactsBanner .contacts_info ul li a p {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--light);
+}
+
+@media screen and (max-width: 520px) {
+
+    .contactsBanner {
+        padding: 15rem 0;
+    }
+
+    .contactsBanner h2,
+    .contactsBanner p {
+        text-align: center;
+        align-items: center;
+    }
+
+    .contactsBanner p {
+        margin-bottom: 5rem;
+    }
+
+    .contactsBanner .contactsBanner_wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .contactsBanner .contacts_input input,
+    .contactsBanner .contacts_input textarea {
+        width: 40rem;
+    }
+
+    .contactsBanner .contacts_info {
+        background: var(--dark);
+        padding: 2rem;
+        width: 45rem;
+    }
+
+}
 
 /* ----------CTA---------- */
 
