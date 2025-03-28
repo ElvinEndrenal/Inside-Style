@@ -17,6 +17,7 @@
 > Resources
 - Icons: https://fontawesome.com/
 - Fonts: https://fonts.google.com
+- AOS (Animate on Scroll Library): https://github.com/michalsnik/aos
 - Color Hex Codes: https://color-hex.com/
 
 
