@@ -6,4 +6,17 @@ toggleMenu.addEventListener("click", () => {
     toggleMenu.classList.toggle("open")
     headerNav.classList.toggle("open")
     backDrop.classList.toggle("open")
-})
+});
+
+const headerWrapper = document.querySelector(".header_wrapper");
+window.addEventListener("scroll",() => {
+    if (window.scrollY >= 100) {
+        headerWrapper.classList.add("open");
+    } else {
+        headerWrapper.classList.remove("open");
+    }
+
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
+        headerWrapper.classList.remove("open");
+    }
+});
